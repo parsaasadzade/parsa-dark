@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+
+body::after {
+    content: "© طراحی شده توسط [parsaasadzadeh]";
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+    font-size: 12px;
+    color: white;
+    pointer-events: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.circle {
+    width: 50vw;
+    height: 50vw;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    box-shadow: 0 0 5vw 2.5vw rgba(0, 0, 255, 0.8);
+    z-index: -1;
+}
+
+.top-right {
+    top: -25vw;
+    right: -25vw;
+}
+
+.bottom-left {
+    bottom: -25vw;
+    left: -25vw;
+}
+
+section {
+    padding: 10vw 5vw;
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3vw;
+}
+
+.hero .buttons {
+    margin-top: 2vw;
+}
+
+.btn {
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.about, .contact {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 5vw;
+    margin-top: 2vw;
+}
+
+.about h2, .contact h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.about p {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    padding: 1vw;
+    font-size: 1.2vw;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact button {
+    padding: 1vw;
+    font-size: 1.5vw;
+    background: rgba(0, 0, 255, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: rgba(0, 0, 255, 1);
+}
+
+
+footer {
+    text-align: center;
+    padding: 2vw;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1vw;
+    margin-top: 2vw;
+}
+
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 6vw;
+    }
+
+    .btn {
+        font-size: 3vw;
+        padding: 2vw 4vw;
+    }
+
+    .about h2, .contact h2 {
+        font-size: 5vw;
+    }
+.about p {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
+    .contact input, .contact textarea, .contact button {
+        font-size: 4vw;
+        padding: 3vw;
+    }
+
+    footer {
+        font-size: 3vw;
+    }
+
+    /* دایره‌های نورانی روی موبایل */
+    .circle {
+        width: 70vw;
+        height: 70vw;
+        box-shadow: 0 0 7vw 3.5vw rgba(0, 0, 255, 0.8);
+    }
+
+    .top-right {
+        top: -35vw;
+        right: -35vw;
+    }
+
+    .bottom-left {
+        bottom: -35vw;
+        left: -35vw;
+    }
+}
+
+
+.m-1{
+    margin: 10px;
+}
